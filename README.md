@@ -107,4 +107,41 @@ if "Checking period borrowed < 3 day" then
 endif
 @enduml
 ```
-![]()
+![](http://www.plantuml.com/plantuml/img/LOv13eCm30JlVeMLKrifNq3y0_LWWGEkae0IevRVOyYf9wzsxHttLQdedY8yNa_q7IAwIGgFwam2I437lwrmhLyw7Eh26H2zxmOjEx__KcW9keqEr3N6UfTSPf5vKOkC0XmhNsOt139f7Lee11dnGwbX6o6kUKQLP2ltNPua0FGsxU4J)
+```
+@startuml
+(*) ->   "direct"   
+
+if "expressway" then
+  -->[true] "expressway"
+
+  --> "pay tolls"   
+  --right-> (*)
+else
+  ->[false] "traffic jam"   
+
+  -->[long time] (*)
+endif
+
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/BOr12e0W54JtSug_h2lKHYYYQqXzKDGK_U7rqsevRuOtgeZESWSFY1NFjCV0DMO7uAs0p8crW6XQ8vc_ddjU31_kHzpGjwHgR1CDc_Q5nww92L1ydUtc0G00)
+
+```
+@startuml
+
+title Homework
+
+
+start
+
+repeat
+  :Do homework;
+  :Check homewoek;
+repeat while (False)
+
+stop
+
+@enduml
+```
