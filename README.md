@@ -1,13 +1,13 @@
 # OOAD-WEEK11
 State Diagram
 
-![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUAArefLqDMrKyWlICqBoKXDoSylua9YW-MIS_ABKs6I2bnS3gbvAK3D0000)
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUAArefLqDMrKyWlICqBoKXDoSylua9YWwIIS_ABKs5oo1oG950_5vT3QbuAq3G0)
 ```
 @startuml
 
 [*] --> openThedoor
-openThedoor --> closeThedoor
- 
+openThedoor--> closeThedoor
+closeThedoor--> [*]
 
 @enduml
 ```
@@ -28,6 +28,17 @@ off --> on
 @startuml
 (*) --> "Login"
 --> "SignOut"
+--> (*)
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuTBGqbJGrRLJo4zBumBJUI3AAJ-_14G7fIQcL8B5WUgu75BpKe1w0000)
+```
+@startuml
+(*) --> off
+--> on
+-->Boot
+-->Ready
 --> (*)
 @enduml
 ```
