@@ -1,17 +1,33 @@
 # OOAD-WEEK11
 State Diagram
 
-![](http://www.plantuml.com/plantuml/img/ROyn2W9134Nxd28N4FijP54FO6Svx68M1zP49d_kRyOTBSGgy7Xv9ADZAgYFbGWPg_1rWXG-Pt-AkXIYwh8xR3XzCG-SsmIVB6jp-9_KdQCXqX_hKiGzuIvfhe1fjDw80t57fdjR5leDndQB3FtAUUiIZQAt-E45)
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUAArefLqDMrKyWlICqBoKXDoSylua9YW-MIS_ABKs6I2bnS3gbvAK3D0000)
 ```
 @startuml
 
-title Water Dispenser
+[*] --> openThedoor
+openThedoor --> closeThedoor
+ 
 
-use-> Water_Dispenser : insert Coin
-use -> Water_Dispenser :insert Bottle
-use -> Press_the_button : Press the button on/off
-Water_Dispenser -> use : Water bottle
+@enduml
+```
 
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUBYYjQALT3LjLF8prEmoim3IkJaS07POA6qD2uWXafpSJcavgK0DG40)
+```
+@startuml
 
+[*] --> on :install
+on --> off
+off --> on
+
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuTBGqbJGrRLJKFB9Jy_CK-82iuCpq_FyIqiWFA0ABeVKl1IWQW00)
+```
+@startuml
+(*) --> "Login"
+--> "SignOut"
+--> (*)
 @enduml
 ```
