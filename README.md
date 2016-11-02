@@ -42,3 +42,17 @@ off --> on
 --> (*)
 @enduml
 ```
+
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUAArefLqDMrKmXAJKofv0AJOBvhHMfoQKbcNZeNd8Ma3bNCgJGjBRK8f1RE0eldbvOKb9PmGIY4PYw7rBmKeEK0)
+```
+@startuml
+
+[*] --> Ready
+Ready --> Executing
+Executing --> Ready
+Executing --> Buffering
+Buffering --> output
+output--> Ready
+
+@enduml
+```
