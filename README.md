@@ -107,3 +107,4 @@ if "Checking period borrowed < 3 day" then
 endif
 @enduml
 ```
+![]()
